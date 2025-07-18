@@ -1,0 +1,96 @@
+html,body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    background-image: url(wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#clock-container{
+    backdrop-filter: blur(5px);
+    background-color: rgba(181, 181, 181, 0.039);
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer{
+    color: white;
+    font-size: 2.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#but{
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.buttons{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+    background-color: rgba(135, 133, 133, 0.354);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.buttons:hover{
+    backdrop-filter: blur(10px);
+    background-color: rgba(135, 133, 133, 0);
+    transform: scale(0.98);
+}
+
+#current_time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    backdrop-filter: blur(5px);
+    background-color: rgba(181, 181, 181, 0.039);
+    color: white;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    color: white;
+    z-index: 9999;
+    text-align: center;
+    width: 7rem;
+    height: 1.5rem;
+    border-radius: 3px;
+    margin: 0.2rem;
+    transition: background-color 0.4s ease
+}
+
+#current_time:hover{
+    background-color: rgba(181, 181, 181, 0.088);
+    transition: background-color 0.4s ease
+}
